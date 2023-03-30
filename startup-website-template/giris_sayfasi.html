@@ -23,14 +23,18 @@
         .button-container {
             position: absolute;
             bottom: 0;
-            right: 0;
             display: flex;
-            flex-direction: row-reverse;
-            margin: 1rem;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 1rem;
         }
         
         .button-container button {
             margin-left: 1rem;
+            background-color: transparent;
+            border: none;
+            color: transparent;
+            width: 50%;
         }
     </style>
 </head>
@@ -39,10 +43,40 @@
     <div class="image-container">
         <img src="img/hosgeldiniz.png" alt="image-description">
         <div class="button-container">
-            <a href="page1.html"><button>Button 1</button></a>
-            <a href="page2.html"><button>Button 2</button></a>
+            <a href="doktor_anasayfasi.html"><button id="left-button">Button 1</button></a>
+            <a href="hasta_anasayfasi.html"><button id="right-button">Button 2</button></a>
         </div>
     </div>
+
+    <script>
+        var leftButton = document.getElementById("left-button");
+        var rightButton = document.getElementById("right-button");
+        var screenWidth = window.innerWidth;
+
+        function handleLeftClick(event) {
+            if (event.clientX <= screenWidth / 2) {
+                leftButton.click();
+            }
+        }
+
+        function handleRightClick(event) {
+            if (event.clientX >= screenWidth / 2) {
+                rightButton.click();
+            }
+        }
+
+        function hideButtons() {
+            var buttons = document.querySelectorAll(".button-container button");
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].style.visibility = "hidden";
+            }
+        }
+
+        document.addEventListener("click", function(event) {
+            handleLeftClick(event);
+            handleRightClick(event);
+        });
+    </script>
 </body>
 
 </html>
