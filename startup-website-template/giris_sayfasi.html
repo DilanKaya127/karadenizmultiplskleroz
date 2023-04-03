@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
     <style>
         .image-container {
             width: 100%;
@@ -22,19 +21,45 @@
         
         .button-container {
             position: absolute;
-            bottom: 0;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            top: 50%;
+            transform: translateY(-50%);
             width: 100%;
             padding: 0 1rem;
         }
         
         .button-container button {
-            margin-left: 1rem;
-            background-color: transparent;
+            background-color: rgb(12, 12, 114);
             border: none;
-            color: transparent;
-            width: 50%;
+            color: white;
+            height: 50px;
+            font-size: 24px;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        
+        .button-container button:hover {
+            background-color: darkblue;
+        }
+        
+        #left-button {
+            position: absolute;
+            top: 0;
+            left: 35%;
+            transform: translate(0%, -10%);
+            margin-right: 10px;
+        }
+        
+        #right-button {
+            position: absolute;
+            top: 0;
+            right: 35%;
+            transform: translate(0%, -10%);
+            margin-left: -50px;
         }
     </style>
 </head>
@@ -43,11 +68,10 @@
     <div class="image-container">
         <img src="img/hosgeldiniz.png" alt="image-description">
         <div class="button-container">
-            <a href="doktor_anasayfasi.html"><button id="left-button">Button 1</button></a>
-            <a href="hasta_anasayfasi.html"><button id="right-button">Button 2</button></a>
+            <a href="index.html"><button id="left-button">Doktor Girişi</button></a>
+            <a href="index.html"><button id="right-button">Hasta Girişi</button></a>
         </div>
     </div>
-
     <script>
         var leftButton = document.getElementById("left-button");
         var rightButton = document.getElementById("right-button");
