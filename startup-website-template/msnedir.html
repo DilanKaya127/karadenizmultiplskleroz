@@ -34,10 +34,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
-    
-
+      
     <style>
-        .navbar-nav {
+      .navbar-nav {
             margin: auto;
         }
         
@@ -45,8 +44,6 @@
             padding-left: 20px;
             padding-right: 20px;
         }
-    </style>
-    <style>
         .logo img {
             max-height: 120px;
             max-width: 200px;
@@ -60,57 +57,59 @@
             width: auto;
             margin: 0 5px;
         }
-    </style>
-    <style>
+        .bg-header {
+        background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(img/doctor2.jpg) center center no-repeat;
+        background-size: cover;
+        }
         .text-secondary {
-    color: #3d5d6f;
-  }
-  
-  .h4,
-  h4 {
-    font-size: 1.2rem;
-  }
+        color: #3d5d6f;
+        }
+      
+        .h4,
+        h4 {
+          font-size: 1.2rem;
+        }
 
-  h2 {
-    color: #333;
-  }
-  
-  .fa,
-  .fas {
-    font-family: 'FontAwesome';
-    font-weight: 400;
-    font-size: 1.2rem;
-    font-style: normal;
-  }
-  
-  .right-0 {
-    right: 0;
-  }
-  
-  .top-0 {
-    top: 0;
-  }
-  
-  .h-100 {
-    height: 100%;
-  }
-  
-  a.text-secondary:focus,
-  a.text-secondary:hover {
-    text-decoration: none;
-    color: #22343e;
-  }
-  
-  #accordion .fa-plus {
-    transition: -webkit-transform 0.25s ease-in-out;
-    transition: transform 0.25s ease-in-out;
-    transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
-  }
-  
-  #accordion a[aria-expanded=true] .fa-plus {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
+        h2 {
+          color: #333;
+        }
+        
+        .fa,
+        .fas {
+          font-family: 'FontAwesome';
+          font-weight: 400;
+          font-size: 1.2rem;
+          font-style: normal;
+        }
+        
+        .right-0 {
+          right: 0;
+        }
+        
+        .top-0 {
+          top: 0;
+        }
+        
+        .h-100 {
+          height: 100%;
+        }
+        
+        a.text-secondary:focus,
+        a.text-secondary:hover {
+          text-decoration: none;
+          color: #22343e;
+        }
+        
+        #accordion .fa-plus {
+          transition: -webkit-transform 0.25s ease-in-out;
+          transition: transform 0.25s ease-in-out;
+          transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+        }
+        
+        #accordion a[aria-expanded=true] .fa-plus {
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
     </style>
 </head>
 
@@ -128,15 +127,15 @@
           <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
               <div class="d-inline-flex align-items-center" style="height: 45px;">
                   <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Atakum/SAMSUN </small>
-                  <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>0 362 319 19  19 / Dahili : 3077</small>
-                  <small class="text-light"><i class="fa fa-envelope-open me-2"></i> karadenizms@karadenizms.com</small>
+                  <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>0 362 319 19 19 / Dahili :
+                      3077</small>
+                  <small class="text-light"><i class="fa fa-envelope-open me-2"></i>
+                      karadenizms@karadenizms.com</small>
               </div>
           </div>
           <div class="col-lg-4 text-center text-lg-end">
               <div class="d-inline-flex align-items-center" style="height: 45px;">
-                  <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://twitter.com/SaMSunMS" target="_blank"><i class="fab fa-twitter fw-normal"></i></a>
-                  <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/Karadenizmultiplskleroz/?fref=ts" target="_blank"><i class="fab fa-facebook-f fw-normal"></i></a>
-                  <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/karadenizmultiplsklerozdernegi/?hl=tr" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+                  <span class="text-light"><strong>Karadeniz Ms</strong></span>
               </div>
           </div>
       </div>
@@ -204,9 +203,6 @@
             <div class="row py-5">
                 <div class="col-12 pt-lg-5 mt-lg-5 text-center">
                     <h1 class="display-4 text-white animated zoomIn">MS Nedir?</h1>
-                    <a href="" class="h5 text-white">Multipl  </a>
-                    <i class="far fa-circle text-white px-2"></i>
-                    <a href="" class="h5 text-white"> Skleroz</a>
                 </div>
             </div>
         </div>
@@ -425,11 +421,6 @@
                           <div class="d-flex mb-2">
                               <i class="bi bi-telephone text-primary me-2"></i>
                               <p class="mb-0">0 362 319 19 19 / Dahili : 3077</p>
-                          </div>
-                          <div class="d-flex mt-4">
-                              <a class="btn btn-primary btn-square me-2" href="https://twitter.com/SaMSunMS" target="_blank"><i class="fab fa-twitter fw-normal"></i></a>
-                              <a class="btn btn-primary btn-square me-2" href="https://www.facebook.com/Karadenizmultiplskleroz/?fref=ts" target="_blank"><i class="fab fa-facebook-f fw-normal"></i></a>
-                              <a class="btn btn-primary btn-square" href="https://www.instagram.com/karadenizmultiplsklerozdernegi/?hl=tr" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
                           </div>
                       </div>
                       <div class="col-lg-3 col-md-6 pt-0 pt-lg-5 mb-5">
