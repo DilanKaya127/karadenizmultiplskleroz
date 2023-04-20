@@ -5,10 +5,15 @@
     <link href="img/kms_logo.webp" rel="icon">
 
     <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+        }
         .image-container {
             width: 100%;
             height: 0;
-            padding-bottom: 56.25%;
+            padding-bottom: 45.30%;
             position: relative;
         }
         
@@ -18,7 +23,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: fill;
         }
         
         .button-container {
@@ -38,7 +43,7 @@
             color: white;
             height: 50px;
             font-size: 24px;
-            padding: 12px 24px;
+            padding: 10px 24px;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.2s ease;
@@ -50,17 +55,15 @@
         
         #left-button {
             position: absolute;
-            top: 0;
-            left: 35%;
-            transform: translate(0%, -10%);
-            margin-right: 10px;
+            top: 250px;
+            left: 4%;
+            margin-right: 2px;
         }
         
         #right-button {
             position: absolute;
-            top: 0;
-            right: 35%;
-            transform: translate(0%, -10%);
+            top: 250px;
+            right: 10%;
             margin-left: -50px;
         }
     </style>
@@ -70,8 +73,8 @@
     <div class="image-container">
         <img src="img/hosgeldiniz.png" alt="image-description">
         <div class="button-container">
-            <a href="index.html"><button id="left-button">Doktor Girişi</button></a>
-            <a href="index.html"><button id="right-button">Hasta Girişi</button></a>
+            <a href="dernegimiz.html"><button id="left-button">Hasta Girişi</button></a>
+            <a href="index.html"><button id="right-button">Doktor Girişi</button></a>
         </div>
     </div>
     <script>
