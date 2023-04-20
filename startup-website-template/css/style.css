@@ -490,3 +490,7 @@ h6,
 {
     color:rgb(30, 29, 29);
 }
+
+html{
+    scroll-behavior: smooth;
+}
