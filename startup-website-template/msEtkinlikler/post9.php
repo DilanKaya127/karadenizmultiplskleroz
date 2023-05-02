@@ -17,7 +17,8 @@
     $allergy2 = $_POST["allergy2"];
     $companion = $_POST["companion"];
 
-    $to = "yavuz-kuk@hotmail.com";
+    $to = "info@muratterzi.com.tr";
+
 
     $messegae = "<ul>
                     <li>".$name."-".$age."-".$gender."</li>

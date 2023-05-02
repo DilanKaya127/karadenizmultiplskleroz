@@ -8,7 +8,8 @@
     $medicine = $_POST["medicine"];
     $photo = $_POST["photo"];
 
-    $to = "yavuz-kuk@hotmail.com";
+    $to = "info@muratterzi.com.tr";
+
 
     $messeage = "<ul>
                     <li>Ad-Soyad: ".$name."</li>
